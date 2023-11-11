@@ -23,8 +23,9 @@ public class Mortgage {
         while (true) {
             System.out.print("Annual Interest Rate: ");
             annualInterest = scanner.nextFloat();
-            if ((annualInterest > 0) && (annualInterest <=100))
+            if ((annualInterest > 0) && (annualInterest <=100)) {
                 break;
+            }
             System.out.println("Enter a number between 1 and 100");
             }
 
@@ -33,9 +34,11 @@ public class Mortgage {
         while (true) {
             System.out.print("Period (Years): ");
             year = scanner.nextByte();
-            if ((year >= 1) && (year <= 30))
+            if ((year >= 1) && (year <= 30)) {
                 numberOfPayments = year * MONTHS_IN_YEAR;
-            break;
+                break;
+            }
+            System.out.println("Enter a value between 1 and 30");
         }
 
         double mortgage_payment = principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments)) /(Math.pow(1 + monthlyInterest, numberOfPayments) -1);
