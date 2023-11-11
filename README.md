@@ -20,7 +20,8 @@ Enter the principal amount when prompted. The amount should be between 1,000 and
 Input the annual interest rate (in percent) when prompted. The rate should be a value between 1 and 100.
 Enter the loan period in years. Valid inputs are between 1 and 30 years.
 The program will then display the monthly mortgage payment in your locale's currency format.
-Contributions
+
+# Contributions
 
 Contributions to this project are welcome. You can enhance it by adding features like input validation, a graphical user interface, or extending it to include different types of loans.
 
